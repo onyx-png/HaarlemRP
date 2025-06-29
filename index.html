@@ -1,4 +1,22 @@
-<!DOCTYPE html>
+.discord-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .discord-info {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .discord-actions {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .discord-btn {
+                width: 100%;
+                justify-content: center;
+            }<!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
@@ -386,6 +404,120 @@
             font-size: 0.95rem;
         }
 
+        /* Discord Section */
+        .discord-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #5865F2, #4752C4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .discord-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300"><path d="M0,100 C150,200 350,0 500,100 C650,200 850,0 1000,100 L1000,300 L0,300 Z" fill="rgba(255,255,255,0.05)"/></svg>') no-repeat center;
+            background-size: cover;
+        }
+
+        .discord-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 3rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .discord-info {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex: 1;
+        }
+
+        .discord-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .discord-text h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+
+        .discord-text p {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin: 0;
+        }
+
+        .discord-actions {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .discord-btn {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .discord-btn:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .discord-stats {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            line-height: 1.2;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
         /* Commands Section */
         .commands {
             padding: 6rem 0;
@@ -526,6 +658,7 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#features">Features</a></li>
+                <li><a href="#discord">Discord</a></li>
                 <li><a href="#controls">Controls</a></li>
                 <li><a href="#commands">Commands</a></li>
             </ul>
@@ -581,50 +714,50 @@
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-users"></i>
+                        <i class="fas fa-crosshairs"></i>
                     </div>
-                    <h3 class="feature-title">Actieve Community</h3>
-                    <p class="feature-description">Een vriendelijke Nederlandse community met ervaren roleplayers en behulpzame staff die altijd klaar staan.</p>
+                    <h3 class="feature-title">EasyWeapon System</h3>
+                    <p class="feature-description">Snelle wapen toegang zonder ingewikkelde systemen. Pak je gear en spring direct de actie in!</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
+                        <i class="fas fa-fist-raised"></i>
                     </div>
-                    <h3 class="feature-title">Professionele Staff</h3>
-                    <p class="feature-description">Ons team zorgt voor een eerlijke en plezierige speelervaring met duidelijke regels en snelle support.</p>
+                    <h3 class="feature-title">Intense PvP Combat</h3>
+                    <p class="feature-description">Non-stop gevechten en intense PvP scenarios. Test je skills tegen de beste fighters van Nederland.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-car"></i>
+                        <i class="fas fa-trophy"></i>
                     </div>
-                    <h3 class="feature-title">Custom Voertuigen</h3>
-                    <p class="feature-description">Uitgebreide collectie Nederlandse en internationale voertuigen, van politieauto's tot luxe supercars.</p>
+                    <h3 class="feature-title">Leaderboards & Stats</h3>
+                    <p class="feature-description">Klim naar de top van de rankings en bewijs dat jij de beste fighter bent op de server.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-briefcase"></i>
+                        <i class="fas fa-rocket"></i>
                     </div>
-                    <h3 class="feature-title">Leuke Banen</h3>
-                    <p class="feature-description">Werk als politie, ambulance, taxi, mechanieker of kmar.</p>
+                    <h3 class="feature-title">Snelle Respawn</h3>
+                    <p class="feature-description">Geen lange wachttijden! Instant respawn betekent meer actie en minder downtime.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-home"></i>
+                        <i class="fas fa-users-cog"></i>
                     </div>
-                    <h3 class="feature-title">Huizen & Bedrijven</h3>
-                    <p class="feature-description">Koop je eigen huis, start een bedrijf en bouw je imperium op in ons uitgebreide economische systeem.</p>
+                    <h3 class="feature-title">Gang Wars</h3>
+                    <p class="feature-description">Vorm teams, claim territories en vecht in epische gang wars voor de controle over Haarlem.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-gamepad"></i>
+                        <i class="fas fa-map-marked-alt"></i>
                     </div>
-                    <h3 class="feature-title">Regelmatige Updates</h3>
-                    <p class="feature-description">Constante verbetering met nieuwe features, events en content om de ervaring vers en spannend te houden.</p>
+                    <h3 class="feature-title">Combat Zones</h3>
+                    <p class="feature-description">Speciale combat areas met verschillende maps en scenarios voor de ultieme PvP ervaring.</p>
                 </div>
             </div>
         </div>
@@ -743,6 +876,39 @@
         </div>
     </section>
 
+    <!-- Discord Section -->
+    <section id="discord" class="discord-section">
+        <div class="container">
+            <div class="discord-content">
+                <div class="discord-info">
+                    <div class="discord-icon">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <div class="discord-text">
+                        <h3>Join onze Discord Community</h3>
+                        <p>Blijf op de hoogte van updates, vind teamgenoten en chat met andere spelers!</p>
+                    </div>
+                </div>
+                <div class="discord-actions">
+                    <a href="https://discord.gg/dWZSUEVrpE" target="_blank" class="discord-btn">
+                        <i class="fab fa-discord"></i>
+                        Join Discord
+                    </a>
+                    <div class="discord-stats">
+                        <div class="stat">
+                            <span class="stat-number">2000+</span>
+                            <span class="stat-label">Members</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Online</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Commands Section -->
     <section id="commands" class="commands">
         <div class="container">
@@ -798,7 +964,7 @@
                     <div class="logo-icon">HL</div>
                     <div>
                         <h3>Haarlem Roleplay</h3>
-                        <p style="color: rgba(255,255,255,0.6); margin: 0;">De beste Nederlandse FiveM ervaring</p>
+                        <p style="color: rgba(255,255,255,0.6); margin: 0;">De beste Nederlandse Combat Server</p>
                     </div>
                 </div>
                 <div class="connect-code" onclick="copyConnectCode()">
