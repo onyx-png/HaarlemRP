@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+.section-title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #ffffff, #4A90E2);
+            -webkit<!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
@@ -16,7 +21,7 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background: #000000;
+            background: #0B1426;
             color: #ffffff;
             line-height: 1.6;
             overflow-x: hidden;
@@ -30,7 +35,7 @@
             width: 100%;
             height: 100%;
             z-index: -1;
-            background: radial-gradient(ellipse at top, #1a1a2e 0%, #16213e 40%, #0f0f0f 100%);
+            background: radial-gradient(ellipse at top, #1E2A47 0%, #0B1426 40%, #050B1A 100%);
         }
 
         .animated-bg::before {
@@ -40,7 +45,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="g1" cx="50%" cy="50%"><stop offset="0%" stop-color="%23ff6b35" stop-opacity="0.3"/><stop offset="100%" stop-color="%23ff6b35" stop-opacity="0"/></radialGradient><radialGradient id="g2" cx="50%" cy="50%"><stop offset="0%" stop-color="%233B82F6" stop-opacity="0.2"/><stop offset="100%" stop-color="%233B82F6" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="300" r="400" fill="url(%23g1)"/><circle cx="800" cy="700" r="300" fill="url(%23g2)"/><circle cx="600" cy="200" r="250" fill="url(%23g1)"/></svg>') no-repeat center;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="g1" cx="50%" cy="50%"><stop offset="0%" stop-color="%234A90E2" stop-opacity="0.3"/><stop offset="100%" stop-color="%234A90E2" stop-opacity="0"/></radialGradient><radialGradient id="g2" cx="50%" cy="50%"><stop offset="0%" stop-color="%232563EB" stop-opacity="0.2"/><stop offset="100%" stop-color="%232563EB" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="300" r="400" fill="url(%23g1)"/><circle cx="800" cy="700" r="300" fill="url(%23g2)"/><circle cx="600" cy="200" r="250" fill="url(%23g1)"/></svg>') no-repeat center;
             background-size: cover;
             animation: float 20s ease-in-out infinite;
         }
@@ -65,7 +70,7 @@
             position: absolute;
             width: 2px;
             height: 2px;
-            background: rgba(255, 107, 53, 0.6);
+            background: rgba(74, 144, 226, 0.6);
             border-radius: 50%;
             animation: particle-float 15s infinite linear;
         }
@@ -92,17 +97,17 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(11, 20, 38, 0.8);
             backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(255, 107, 53, 0.2);
+            border-bottom: 1px solid rgba(74, 144, 226, 0.2);
             padding: 0;
             z-index: 1000;
             transition: all 0.3s ease;
         }
 
         .navbar.scrolled {
-            background: rgba(0, 0, 0, 0.95);
-            border-bottom-color: rgba(255, 107, 53, 0.5);
+            background: rgba(11, 20, 38, 0.95);
+            border-bottom-color: rgba(74, 144, 226, 0.5);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
 
@@ -122,20 +127,21 @@
             font-size: 1.4rem;
             font-weight: 800;
             color: #fff;
-            text-shadow: 0 0 20px rgba(255, 107, 53, 0.5);
+            text-shadow: 0 0 20px rgba(74, 144, 226, 0.5);
         }
 
         .logo-icon {
             width: 40px;
             height: 40px;
-            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="%234A90E2"/><text x="50" y="35" text-anchor="middle" fill="white" font-size="20" font-weight="bold">HL</text><text x="50" y="65" text-anchor="middle" fill="white" font-size="8">ROLEPLAY</text></svg>') no-repeat center;
+            background-size: contain;
             border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: bold;
             font-size: 1rem;
-            box-shadow: 0 8px 32px rgba(255, 107, 53, 0.4);
+            box-shadow: 0 8px 32px rgba(74, 144, 226, 0.4);
             position: relative;
             overflow: hidden;
         }
@@ -177,13 +183,13 @@
         }
 
         .nav-links a:hover {
-            color: #ff6b35;
-            background: rgba(255, 107, 53, 0.1);
+            color: #4A90E2;
+            background: rgba(74, 144, 226, 0.1);
             transform: translateY(-2px);
         }
 
         .connect-btn {
-            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            background: linear-gradient(135deg, #4A90E2, #2563EB);
             color: white;
             padding: 12px 24px;
             border-radius: 8px;
@@ -191,14 +197,14 @@
             font-weight: 700;
             font-size: 0.9rem;
             transition: all 0.3s ease;
-            box-shadow: 0 8px 32px rgba(255, 107, 53, 0.4);
+            box-shadow: 0 8px 32px rgba(74, 144, 226, 0.4);
             position: relative;
             overflow: hidden;
         }
 
         .connect-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 12px 40px rgba(255, 107, 53, 0.6);
+            box-shadow: 0 12px 40px rgba(74, 144, 226, 0.6);
         }
 
         .connect-btn::before {
@@ -249,27 +255,18 @@
         .hero-image {
             width: 100%;
             height: 400px;
-            background: linear-gradient(135deg, rgba(255, 107, 53, 0.2), rgba(59, 130, 246, 0.2));
+            background: linear-gradient(135deg, rgba(74, 144, 226, 0.2), rgba(37, 99, 235, 0.2)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400"><rect fill="%230B1426" width="600" height="400"/><defs><pattern id="cityPattern" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse"><rect fill="%234A90E2" opacity="0.1" width="20" height="40" x="10" y="10"/><rect fill="%232563EB" opacity="0.1" width="15" height="35" x="35" y="15"/></pattern></defs><rect fill="url(%23cityPattern)" width="600" height="400"/><text x="300" y="180" text-anchor="middle" fill="%234A90E2" font-size="36" font-weight="bold">HAARLEM</text><text x="300" y="220" text-anchor="middle" fill="%23ffffff" font-size="20" opacity="0.8">COMBAT ZONE</text><text x="300" y="250" text-anchor="middle" fill="%234A90E2" font-size="16" opacity="0.6">EasyWeapon System</text></svg>');
             border-radius: 20px;
-            border: 2px solid rgba(255, 107, 53, 0.3);
+            border: 2px solid rgba(74, 144, 226, 0.3);
             backdrop-filter: blur(10px);
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
             overflow: hidden;
-        }
-
-        .hero-image::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><rect fill="%23000" width="400" height="400"/><g fill="%23ff6b35" opacity="0.1"><circle cx="100" cy="100" r="50"/><circle cx="300" cy="150" r="30"/><circle cx="200" cy="300" r="40"/><rect x="50" y="200" width="60" height="20"/><rect x="250" y="80" width="40" height="15"/></g><text x="200" y="200" text-anchor="middle" fill="%23ff6b35" font-size="24" font-weight="bold">HAARLEM</text><text x="200" y="230" text-anchor="middle" fill="%233B82F6" font-size="16">COMBAT ZONE</text></svg>');
             background-size: cover;
-            opacity: 0.7;
+            background-position: center;
         }
 
         .hero-stats {
@@ -279,10 +276,10 @@
             transform: translateX(-50%);
             display: flex;
             gap: 2rem;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(11, 20, 38, 0.9);
             padding: 1rem 2rem;
             border-radius: 15px;
-            border: 1px solid rgba(255, 107, 53, 0.3);
+            border: 1px solid rgba(74, 144, 226, 0.3);
             backdrop-filter: blur(10px);
         }
 
@@ -294,7 +291,7 @@
             display: block;
             font-size: 1.5rem;
             font-weight: 800;
-            color: #ff6b35;
+            color: #4A90E2;
             animation: countUp 2s ease-out;
         }
 
@@ -324,15 +321,15 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: rgba(255, 107, 53, 0.1);
-            border: 1px solid rgba(255, 107, 53, 0.3);
+            background: rgba(74, 144, 226, 0.1);
+            border: 1px solid rgba(74, 144, 226, 0.3);
             padding: 10px 20px;
             border-radius: 50px;
             font-size: 0.85rem;
             font-weight: 600;
-            color: #ff6b35;
+            color: #4A90E2;
             margin-bottom: 2rem;
-            box-shadow: 0 8px 32px rgba(255, 107, 53, 0.2);
+            box-shadow: 0 8px 32px rgba(74, 144, 226, 0.2);
             animation: pulse 3s infinite;
         }
 
@@ -346,11 +343,11 @@
             font-weight: 900;
             line-height: 1.1;
             margin-bottom: 1.5rem;
-            background: linear-gradient(135deg, #ffffff, #ff6b35, #3B82F6);
+            background: linear-gradient(135deg, #ffffff, #4A90E2, #2563EB);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            text-shadow: 0 0 40px rgba(255, 107, 53, 0.3);
+            text-shadow: 0 0 40px rgba(74, 144, 226, 0.3);
         }
 
         .hero p {
@@ -368,7 +365,7 @@
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            background: linear-gradient(135deg, #4A90E2, #2563EB);
             color: white;
             padding: 18px 36px;
             border-radius: 12px;
@@ -376,7 +373,7 @@
             font-weight: 700;
             font-size: 1.1rem;
             transition: all 0.3s ease;
-            box-shadow: 0 8px 32px rgba(255, 107, 53, 0.4);
+            box-shadow: 0 8px 32px rgba(74, 144, 226, 0.4);
             display: inline-flex;
             align-items: center;
             gap: 10px;
@@ -386,7 +383,7 @@
 
         .btn-primary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(255, 107, 53, 0.6);
+            box-shadow: 0 15px 40px rgba(74, 144, 226, 0.6);
         }
 
         .btn-primary::before {
@@ -406,7 +403,7 @@
 
         .btn-secondary {
             background: rgba(255, 255, 255, 0.05);
-            border: 2px solid rgba(255, 107, 53, 0.3);
+            border: 2px solid rgba(74, 144, 226, 0.3);
             color: white;
             padding: 16px 32px;
             border-radius: 12px;
@@ -421,15 +418,15 @@
         }
 
         .btn-secondary:hover {
-            background: rgba(255, 107, 53, 0.1);
-            border-color: #ff6b35;
+            background: rgba(74, 144, 226, 0.1);
+            border-color: #4A90E2;
             transform: translateY(-2px);
         }
 
         /* Connect Section */
         .connect-section {
-            background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(59, 130, 246, 0.1));
-            border: 2px solid rgba(255, 107, 53, 0.3);
+            background: linear-gradient(135deg, rgba(74, 144, 226, 0.1), rgba(37, 99, 235, 0.1));
+            border: 2px solid rgba(74, 144, 226, 0.3);
             border-radius: 20px;
             padding: 2.5rem;
             margin: 4rem 0;
@@ -437,7 +434,7 @@
             position: relative;
             overflow: hidden;
             backdrop-filter: blur(20px);
-            box-shadow: 0 20px 60px rgba(255, 107, 53, 0.2);
+            box-shadow: 0 20px 60px rgba(74, 144, 226, 0.2);
         }
 
         .connect-section::before {
@@ -447,7 +444,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(45deg, transparent, rgba(255, 107, 53, 0.05), transparent);
+            background: linear-gradient(45deg, transparent, rgba(74, 144, 226, 0.05), transparent);
             animation: shimmer 3s infinite;
         }
 
@@ -459,18 +456,18 @@
         .connect-section h3 {
             font-size: 1.8rem;
             margin-bottom: 1rem;
-            color: #ff6b35;
+            color: #4A90E2;
             font-weight: 700;
         }
 
         .connect-code {
-            background: rgba(0, 0, 0, 0.8);
-            border: 2px solid rgba(255, 107, 53, 0.4);
+            background: rgba(11, 20, 38, 0.8);
+            border: 2px solid rgba(74, 144, 226, 0.4);
             border-radius: 12px;
             padding: 1.5rem 2rem;
             font-family: 'JetBrains Mono', 'Courier New', monospace;
             font-size: 1.3rem;
-            color: #ff6b35;
+            color: #4A90E2;
             margin: 1.5rem 0;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -482,9 +479,9 @@
         }
 
         .connect-code:hover {
-            background: rgba(0, 0, 0, 1);
-            border-color: #ff6b35;
-            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+            background: rgba(11, 20, 38, 1);
+            border-color: #4A90E2;
+            box-shadow: 0 10px 30px rgba(74, 144, 226, 0.3);
             transform: translateY(-2px);
         }
 
@@ -501,7 +498,7 @@
         /* Features Grid */
         .features {
             padding: 8rem 0;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(20, 20, 40, 0.9) 100%);
+            background: linear-gradient(180deg, rgba(11, 20, 38, 0.8) 0%, rgba(30, 42, 71, 0.9) 100%);
             position: relative;
         }
 
